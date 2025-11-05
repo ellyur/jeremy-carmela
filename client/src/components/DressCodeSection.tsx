@@ -1,0 +1,88 @@
+import { motion } from 'framer-motion';
+import flower9 from '@assets/flower9_1759741371017.png';
+import flower3 from '@assets/flower3_1759741371015.png';
+import dressCodeImage from '@assets/dresscode_1762266869903.png';
+
+const DressCodeSection = () => {
+  return (
+    <motion.section 
+      id="dresscode" 
+      className="section-pastel-blue bg-white relative overflow-hidden mt-[10px]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 7.5 }}
+    >
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 border border-primary/30 rounded-full"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 border border-primary/30 rounded-full"></div>
+      </div>
+      <div className="max-w-5xl mx-auto relative z-10">
+        {/* Section Header */}
+        <motion.div 
+          className="text-center mb-16 relative"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 7.8 }}
+        >
+          {/* Decorative Elements */}
+          <div className="absolute top-0 left-1/4 w-8 h-8 border-2 border-primary/30 rounded-full"></div>
+          <div className="absolute top-4 right-1/4 w-4 h-4 bg-primary/20 rounded-full"></div>
+          <div className="absolute bottom-0 left-1/3 w-6 h-6 border border-primary/40 rounded-full"></div>
+          <div className="absolute bottom-2 right-1/3 w-3 h-3 bg-primary/30 rounded-full"></div>
+
+          <h2 className="font-display font-light italic mb-8 text-[48px] text-[#3d668f]" data-testid="text-dresscode-title">
+            Attire Guide
+          </h2>
+        </motion.div>
+
+        {/* Unified Dress Code Card */}
+        <motion.div 
+          className="mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 8.1 }}
+        >
+          <div className="bg-card/30 border border-border rounded-xl p-8 md:p-12 shadow-soft hover-elegant transition-all duration-500 relative">
+            {/* Flower Decorations */}
+            <img src={flower9} alt="" className="absolute top-2 right-2 w-16 md:w-20 opacity-80" />
+            <img src={flower3} alt="" className="absolute bottom-2 left-2 w-20 md:w-24 opacity-80 transform -rotate-12" />
+            
+            <div className="text-center max-w-3xl mx-auto">
+              <motion.div
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.6, delay: 8.3 }}
+              >
+                <h3 className="text-2xl md:text-3xl font-display font-medium text-foreground mb-6">
+                  Strictly Semi-Formal / Formal Attire
+                </h3>
+                
+                <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed font-satoshi">
+                  We encourage you to dress according to our wedding colors
+                </p>
+
+                {/* Dress Code Illustration */}
+                <div className="mb-8">
+                  <p className="text-base text-foreground/80 mb-4 font-satoshi">Recommended Color Palette</p>
+                  <div className="flex justify-center">
+                    <img 
+                      src={dressCodeImage} 
+                      alt="Dress Code Illustration" 
+                      className="w-full max-w-2xl rounded-lg shadow-md"
+                      data-testid="img-dresscode-illustration"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+
+        
+      </div>
+    </motion.section>
+  );
+};
+
+export default DressCodeSection;
