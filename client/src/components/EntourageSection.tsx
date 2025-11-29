@@ -23,15 +23,18 @@ const EntourageSection = () => {
         "Novalita Bala"
       ]
     },
+    groomsmen: [
+      "Mack Josh Bulo"
+    ],
+    bridesmaids: [
+      "April Buenaventura"
+    ],
     bestMen: [
-      "Mack Josh Bulo",
-      "Jayson Bolo",
       "John Megryan Samartino",
       "Chito Atibagos Jr.",
       "Mark John Bulo"
     ],
     maidsOfHonor: [
-      "April Buenaventura",
       "Charena Atibagos",
       "Mikaela Jehm Bulo",
       "Faith Mose",
@@ -109,6 +112,37 @@ const EntourageSection = () => {
             <div className="text-center">
               {entourageData.principalSponsors.women.map((name, index) => (
                 <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 whitespace-nowrap text-left" data-testid={`principal-sponsor-women-${index}`}>
+                  {name}
+                </p>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Groomsmen & Bridesmaids */}
+        <motion.div 
+          className="mb-8 md:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 9.2 }}
+        >
+          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+            <div className="text-center" data-testid="groomsmen-section">
+              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
+                Groom's Men
+              </h3>
+              {entourageData.groomsmen.map((name, index) => (
+                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-right" data-testid={`groomsman-${index}`}>
+                  {name}
+                </p>
+              ))}
+            </div>
+            <div className="text-center" data-testid="bridesmaids-section">
+              <h3 className="text-lg md:text-2xl lg:text-3xl font-display font-bold mb-3 md:mb-6 text-primary">
+                Bride's Maid
+              </h3>
+              {entourageData.bridesmaids.map((name, index) => (
+                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-left" data-testid={`bridesmaid-${index}`}>
                   {name}
                 </p>
               ))}
