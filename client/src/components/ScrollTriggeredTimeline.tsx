@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
-import { Clock, Camera, Utensils, Music, Heart, Users, Wine, PartyPopper, Sparkles, Church } from 'lucide-react';
+import { Clock, Camera, Utensils, Music, Heart, Users, Wine, PartyPopper, Sparkles, Building2 } from 'lucide-react';
 
 interface TimelineEvent {
     time: string;
@@ -146,7 +146,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:00 PM",
         event: "CEREMONY",
         description: "Witness our vows and the beginning of our journey together as we exchange rings and promises at Lokal ng Lalaan.",
-        icon: Church,
+        icon: Building2,
         hueA: 40,
         hueB: 40,
     },
