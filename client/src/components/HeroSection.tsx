@@ -77,7 +77,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         <div className={`transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <a 
             href="#rsvp"
-            className="inline-block px-8 py-3 bg-blue-500 rounded-lg text-white text-sm md:text-base font-display tracking-wider hover:bg-blue-600 transition-all duration-300 uppercase"
+            className="inline-block px-8 py-3 bg-blue-500 rounded-full text-white text-sm md:text-base font-display tracking-wider hover:bg-blue-600 transition-all duration-300 uppercase"
             data-testid="button-hero-rsvp"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500 }}
           >
