@@ -7,10 +7,10 @@ import flowerImage from '@assets/flower_1759854441531.png';
 
 // Local story images
 import storyImage1 from '@assets/lovestory1_1762268351602.JPG';
-import storyImage2 from '@assets/lovestory2_1762268351602.JPG';
+const storyImage2 = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764432058/january_15_2015_dt7so5.jpg';
 import storyImage3 from '@assets/prenup6_1762268498229.JPG';
 import storyImage4 from '@assets/lovestory4_1762268351603.JPG';
-import storyImage5 from '@assets/lovestory5_1762268351604.JPG';
+const storyImage5 = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764432057/forever_after_wmqc3d.jpg';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);

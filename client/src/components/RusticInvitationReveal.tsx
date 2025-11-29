@@ -4,9 +4,9 @@ import flower1Image from '@assets/flower1_1759854441524.png';
 import flowerImage from '@assets/flower_1759854441531.png';
 
 // Local images
-import belovedImage from '@assets/beloved_1762266869897.jpg';
-import soulmatesImage from '@assets/soulmates_1762266878140.jpg';
-import foreverImage from '@assets/forever_1762266869904.jpg';
+const belovedImage = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764432058/beloved_tbaxyp.jpg';
+const soulmatesImage = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764432058/soulmates_gozfbz.jpg';
+const foreverImage = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764432058/forever_oojgee.jpg';
 
 interface RusticInvitationRevealProps {
   animationsEnabled: boolean;
