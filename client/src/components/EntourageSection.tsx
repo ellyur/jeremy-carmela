@@ -158,25 +158,30 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
         >
-          <div className="grid grid-cols-1 gap-4 md:gap-8 max-w-4xl mx-auto">
-            <div className="text-center" data-testid="best-men-section">
+          <div className="space-y-4 md:space-y-6 max-w-4xl mx-auto">
+            <div className="text-center">
               <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Best Men
+                Best Men & Maids of Honor
               </h3>
-              {entourageData.bestMen.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1" data-testid={`best-man-${index}`}>
-                  {name}
-                </p>
-              ))}
             </div>
-            <div className="text-center" data-testid="maids-of-honor-section">
-              <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Maids of Honor
-              </h3>
-              {entourageData.maidsOfHonor.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1" data-testid={`maid-of-honor-${index}`}>
-                  {name}
-                </p>
+            <div className="space-y-3 md:space-y-4">
+              {Array.from({length: Math.max(entourageData.bestMen.length, entourageData.maidsOfHonor.length)}).map((_, index) => (
+                <div key={index} className="grid grid-cols-2 gap-4 md:gap-8">
+                  <div className="text-center text-right">
+                    {entourageData.bestMen[index] && (
+                      <p className="text-sm md:text-lg lg:text-xl font-telma text-foreground" data-testid={`best-man-${index}`}>
+                        {entourageData.bestMen[index]}
+                      </p>
+                    )}
+                  </div>
+                  <div className="text-center text-left">
+                    {entourageData.maidsOfHonor[index] && (
+                      <p className="text-sm md:text-lg lg:text-xl font-telma text-foreground" data-testid={`maid-of-honor-${index}`}>
+                        {entourageData.maidsOfHonor[index]}
+                      </p>
+                    )}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
