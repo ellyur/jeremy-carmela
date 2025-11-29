@@ -69,7 +69,7 @@ const RSVPSection = () => {
                 href="https://jeremy-carmela-rsvp.replit.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block px-10 py-4 bg-[#294056] text-white text-sm md:text-base font-display tracking-wider hover:bg-[#3d668f] transition-colors duration-300 border-2 border-[#294056] uppercase"
+                className="inline-block px-10 py-4 bg-[#294056] text-white text-sm md:text-base font-display tracking-wider hover:bg-[#3d668f] transition-colors duration-300 border-2 border-[#294056] uppercase rounded-full"
                 data-testid="button-rsvp"
               >RSVP HERE!</a>
 
