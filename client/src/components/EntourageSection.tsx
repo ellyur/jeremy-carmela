@@ -158,13 +158,13 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
         >
-          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="best-men-section">
               <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
                 Best Men
               </h3>
               {entourageData.bestMen.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-right whitespace-nowrap overflow-hidden text-ellipsis" data-testid={`best-man-${index}`}>
+                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1" data-testid={`best-man-${index}`}>
                   {name}
                 </p>
               ))}
@@ -174,7 +174,7 @@ const EntourageSection = () => {
                 Maids of Honor
               </h3>
               {entourageData.maidsOfHonor.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-left whitespace-nowrap overflow-hidden text-ellipsis" data-testid={`maid-of-honor-${index}`}>
+                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1" data-testid={`maid-of-honor-${index}`}>
                   {name}
                 </p>
               ))}
