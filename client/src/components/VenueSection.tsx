@@ -30,7 +30,7 @@ const VenueSection = () => {
       mapEmbed: 'https://www.google.com/maps?q=Jardin+De+Amor+Events+Place+Dasmarinas&output=embed',
       description: 'Celebrate with us at Jardin De Amor Events Place. Following the ceremony, we invite you to join us for an evening of dining, dancing, and joyful celebration as we begin our new life together.',
       details: 'Reception begins immediately following the ceremony. Dinner will be served, followed by dancing and entertainment.',
-      startTime: '4:00 PM',
+      startTime: '5:00 PM',
       locationGuide: 'View on Maps →'
     }
   ];
