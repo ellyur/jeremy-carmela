@@ -67,9 +67,10 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
         {/* Date */}
         <div className={`transition-all duration-700 mt-6 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <p className="text-sm sm:text-base md:text-lg text-white font-light uppercase" data-testid="text-date" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
-            Friday, January 23, 2026 . Iglesia Ni Cristo Lalaan, Dasmariñas City
-          </p>
+          <div className="text-sm sm:text-base md:text-lg text-white font-light uppercase" data-testid="text-date" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
+            <p>Friday, January 23, 2026</p>
+            <p>Iglesia Ni Cristo Lalaan, Dasmariñas City</p>
+          </div>
         </div>
       </div>
 
