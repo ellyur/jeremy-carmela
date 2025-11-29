@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import flower9 from '@assets/flower9_1759741371017.png';
-import flower3 from '@assets/flower3_1759741371015.png';
 import dressCodeImage from '@assets/dresscode_1762266869903.png';
 
 const DressCodeSection = () => {
@@ -44,10 +42,6 @@ const DressCodeSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.1 }}
         >
           <div className="bg-card/30 border border-border rounded-xl p-8 md:p-12 shadow-soft hover-elegant transition-all duration-500 relative">
-            {/* Flower Decorations */}
-            <img src={flower9} alt="" className="absolute top-2 right-2 w-16 md:w-20 opacity-80" />
-            <img src={flower3} alt="" className="absolute bottom-2 left-2 w-20 md:w-24 opacity-80 transform -rotate-12" />
-            
             <div className="text-center max-w-3xl mx-auto">
               <motion.div
                 initial={{ scale: 0.8 }}
