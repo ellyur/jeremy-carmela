@@ -6,7 +6,8 @@ interface TimelineEvent {
     time: string;
     event: string;
     description: string;
-    icon: React.ComponentType<any>;
+    icon?: React.ComponentType<any>;
+    imageUrl?: string;
     hueA: number;
     hueB: number;
 }
@@ -19,6 +20,19 @@ interface TimelineCardProps {
 const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
     const IconComponent = timelineEvent.icon;
     const isEven = i % 2 === 0;
+
+    const renderIcon = () => {
+        if (timelineEvent.imageUrl) {
+            return (
+                <img 
+                    src={timelineEvent.imageUrl} 
+                    alt={timelineEvent.event}
+                    className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                />
+            );
+        }
+        return IconComponent ? <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-accent" /> : null;
+    };
 
     return (
         <motion.div
@@ -66,7 +80,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             variants={cardVariants}
                         >
                             <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-accent/30 flex items-center justify-center">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-accent" />
+                                {renderIcon()}
                             </div>
                         </motion.div>
                     </>
@@ -77,7 +91,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             variants={cardVariants}
                         >
                             <div className="w-16 h-16 md:w-20 md:h-20 bg-background border-2 border-accent/30 flex items-center justify-center ml-auto">
-                                <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-accent" />
+                                {renderIcon()}
                             </div>
                         </motion.div>
                         <div className="w-[10%]"></div>
@@ -146,7 +160,7 @@ const timelineEvents: TimelineEvent[] = [
         time: "2:00 PM",
         event: "CEREMONY",
         description: "Witness our vows and the beginning of our journey together as we exchange rings and promises at Lokal ng Lalaan.",
-        icon: Building2,
+        imageUrl: "https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764434346/212d6bbf-6f7f-46f7-a0d5-ee0ddd3c6daf_mtxgax.png",
         hueA: 40,
         hueB: 40,
     },
