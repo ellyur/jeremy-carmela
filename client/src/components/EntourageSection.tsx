@@ -164,7 +164,7 @@ const EntourageSection = () => {
                 Best Men
               </h3>
               {entourageData.bestMen.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-right" data-testid={`best-man-${index}`}>
+                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-right whitespace-nowrap overflow-hidden text-ellipsis" data-testid={`best-man-${index}`}>
                   {name}
                 </p>
               ))}
@@ -174,7 +174,7 @@ const EntourageSection = () => {
                 Maids of Honor
               </h3>
               {entourageData.maidsOfHonor.map((name, index) => (
-                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-left" data-testid={`maid-of-honor-${index}`}>
+                <p key={index} className="text-sm md:text-lg lg:text-xl font-telma text-foreground mb-1 text-left whitespace-nowrap overflow-hidden text-ellipsis" data-testid={`maid-of-honor-${index}`}>
                   {name}
                 </p>
               ))}
