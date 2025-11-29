@@ -82,7 +82,7 @@ const RSVPSection = () => {
                   Please confirm your attendance by responding to our invitation. Click the RSVP HERE! button above.
                 </p>
                 <p className="text-center">
-                  <span className="font-satoshi md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-[#ffffff]" style={{ backgroundColor: '#294056' }}>THE DEADLINE IS ON NOVEMBER 15</span>
+                  <span className="font-satoshi md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-[#ffffff]" style={{ backgroundColor: '#294056' }}>THE DEADLINE IS ON DECEMBER 15, 2025</span>
                 </p>
               </div>
             </motion.div>
