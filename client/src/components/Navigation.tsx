@@ -94,7 +94,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src={image_removebg_preview__6_} 
+              src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764431418/6759bac6-a0ff-4a0f-aced-c2ce0980552f_1_xvrhfw.jpg" 
               alt="J&C Logo" 
               className="h-12 w-auto object-contain"
               style={{ maxHeight: '48px' }}
