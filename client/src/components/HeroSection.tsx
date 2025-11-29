@@ -28,7 +28,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
+          <p className="text-sm sm:text-base md:text-lg text-white font-light uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
             WHERE LOVE BLOOMS
           </p>
         </div>
@@ -66,7 +66,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
 
         {/* Date */}
         <div className={`transition-all duration-700 mt-6 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-date" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
+          <p className="text-sm sm:text-base md:text-lg text-white font-light uppercase" data-testid="text-date" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
             Friday, January 23, 2026 . Iglesia Ni Cristo Lalaan, Dasmariñas City
           </p>
         </div>
@@ -75,7 +75,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         <div className={`transition-all duration-700 mt-8 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <a 
             href="#rsvp"
-            className="inline-block px-8 py-3 bg-white/10 backdrop-blur-sm text-white text-sm md:text-base font-display tracking-wider hover:bg-white/20 transition-all duration-300 border-2 border-white uppercase"
+            className="inline-block px-8 py-3 bg-blue-500 rounded-lg text-white text-sm md:text-base font-display tracking-wider hover:bg-blue-600 transition-all duration-300 uppercase"
             data-testid="button-hero-rsvp"
             style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 500 }}
           >
