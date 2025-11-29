@@ -25,7 +25,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40" />
       {/* Content - Centered Names */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 flex-grow">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-sm sm:text-base md:text-lg text-white font-light uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
@@ -70,9 +70,11 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             Friday, January 23, 2026 . Iglesia Ni Cristo Lalaan, Dasmariñas City
           </p>
         </div>
+      </div>
 
-        {/* RSVP Button */}
-        <div className={`transition-all duration-700 mt-8 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
+      {/* RSVP Button - Bottom of Section */}
+      <div className="relative z-10 pb-8 sm:pb-12">
+        <div className={`transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <a 
             href="#rsvp"
             className="inline-block px-8 py-3 bg-blue-500 rounded-lg text-white text-sm md:text-base font-display tracking-wider hover:bg-blue-600 transition-all duration-300 uppercase"
