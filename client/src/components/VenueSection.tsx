@@ -4,7 +4,7 @@ import { MapPin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { LinkPreview } from '@/components/ui/link-preview';
 
-import ceremonyImage from '@assets/ceremony_1762266869899.jpg';
+const ceremonyImage = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764431418/09af8678-4a3f-44a3-b45c-47454b225a92_1_cp5fel.jpg';
 import receptionImage from '@assets/reception_1762266878137.jpg';
 
 const VenueSection = () => {
@@ -110,7 +110,7 @@ const VenueSection = () => {
                       {/* Image frame decoration */}
                       <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg" />
                       <img
-                        src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764431418/09af8678-4a3f-44a3-b45c-47454b225a92_1_cp5fel.jpg"
+                        src={venue.image}
                         alt={venue.name}
                         className="relative w-full h-72 md:h-96 object-cover rounded-lg shadow-xl"
                         loading="lazy"
