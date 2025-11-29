@@ -27,7 +27,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                 <img 
                     src={timelineEvent.imageUrl} 
                     alt={timelineEvent.event}
-                    className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                    className="w-12 h-12 md:w-16 md:h-16 object-contain"
                 />
             );
         }
