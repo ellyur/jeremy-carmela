@@ -30,6 +30,7 @@ const EntourageSection = () => {
       "April Buenaventura"
     ],
     bestMen: [
+      "MJ Mañosca",
       "John Megryan Samartino",
       "Chito Atibagos Jr.",
       "Mark John Bulo"
