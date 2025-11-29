@@ -159,7 +159,7 @@ const timelineEvents: TimelineEvent[] = [
         hueB: 40,
     },
     {
-        time: "4:00 PM",
+        time: "5:00 PM",
         event: "RECEPTION",
         description: "Join us in a joyful celebration of love, laughter, and gratitude at Jardin de Amor Events.",
         icon: Sparkles,
@@ -167,7 +167,7 @@ const timelineEvents: TimelineEvent[] = [
         hueB: 40,
     },
     {
-        time: "7:00 PM",
+        time: "9:00 PM",
         event: "CLOSING",
         description: "Say goodbye as we close the night with love, gratitude, and blessings.",
         icon: Heart,
