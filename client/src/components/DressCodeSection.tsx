@@ -56,9 +56,64 @@ const DressCodeSection = () => {
                   We encourage you to dress according to our wedding colors
                 </p>
 
+                {/* Color Palette Swatches */}
+                <div className="mb-12">
+                  <p className="text-base text-foreground/80 mb-6 font-satoshi">Recommended Color Palette</p>
+                  <div className="flex justify-center gap-4 flex-wrap">
+                    {/* Light Blue */}
+                    <div className="flex flex-col items-center gap-2">
+                      <div 
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
+                        style={{ backgroundColor: '#6B8DAE' }}
+                        data-testid="color-swatch-light-blue"
+                      ></div>
+                      <span className="text-sm text-foreground/70 font-satoshi">Slate Blue</span>
+                    </div>
+
+                    {/* Medium Blue */}
+                    <div className="flex flex-col items-center gap-2">
+                      <div 
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
+                        style={{ backgroundColor: '#4A6FA5' }}
+                        data-testid="color-swatch-medium-blue"
+                      ></div>
+                      <span className="text-sm text-foreground/70 font-satoshi">Ocean Blue</span>
+                    </div>
+
+                    {/* Light Gray */}
+                    <div className="flex flex-col items-center gap-2">
+                      <div 
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
+                        style={{ backgroundColor: '#B8C5D6' }}
+                        data-testid="color-swatch-light-gray"
+                      ></div>
+                      <span className="text-sm text-foreground/70 font-satoshi">Soft Gray</span>
+                    </div>
+
+                    {/* Dark Navy */}
+                    <div className="flex flex-col items-center gap-2">
+                      <div 
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
+                        style={{ backgroundColor: '#1A2F4A' }}
+                        data-testid="color-swatch-dark-navy"
+                      ></div>
+                      <span className="text-sm text-foreground/70 font-satoshi">Navy</span>
+                    </div>
+
+                    {/* Cream */}
+                    <div className="flex flex-col items-center gap-2">
+                      <div 
+                        className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
+                        style={{ backgroundColor: '#F5EFE0' }}
+                        data-testid="color-swatch-cream"
+                      ></div>
+                      <span className="text-sm text-foreground/70 font-satoshi">Cream</span>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Dress Code Illustration */}
                 <div className="mb-8">
-                  <p className="text-base text-foreground/80 mb-4 font-satoshi">Recommended Color Palette</p>
                   <div className="flex justify-center">
                     <img 
                       src={dressCodeImage} 
