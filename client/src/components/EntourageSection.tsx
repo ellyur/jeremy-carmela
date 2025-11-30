@@ -83,7 +83,7 @@ const EntourageSection = () => {
                   {parent.label}
                 </h3>
                 {parent.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-base md:text-xl lg:text-2xl font-author text-foreground" data-testid={`parent-name-${index}-${nameIndex}`}>
+                  <p key={nameIndex} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground" data-testid={`parent-name-${index}-${nameIndex}`}>
                     {name}
                   </p>
                 ))}
@@ -105,14 +105,14 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
             <div className="text-center">
               {entourageData.principalSponsors.men.map((name, index) => (
-                <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`principal-sponsor-men-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`principal-sponsor-men-${index}`}>
                   {name}
                 </p>
               ))}
             </div>
             <div className="text-center">
               {entourageData.principalSponsors.women.map((name, index) => (
-                <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`principal-sponsor-women-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`principal-sponsor-women-${index}`}>
                   {name}
                 </p>
               ))}
@@ -134,14 +134,14 @@ const EntourageSection = () => {
             <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
               <div className="text-center">
                 {entourageData.bestMen.map((name, index) => (
-                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`best-man-${index}`}>
+                  <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`best-man-${index}`}>
                     {name}
                   </p>
                 ))}
               </div>
               <div className="text-center">
                 {entourageData.maidsOfHonor.map((name, index) => (
-                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`maid-of-honor-${index}`}>
+                  <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`maid-of-honor-${index}`}>
                     {name}
                   </p>
                 ))}
@@ -163,7 +163,7 @@ const EntourageSection = () => {
                 Groom's Men
               </h3>
               {entourageData.groomsmen.map((name, index) => (
-                <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 text-right" data-testid={`groomsman-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-right" data-testid={`groomsman-${index}`}>
                   {name}
                 </p>
               ))}
@@ -173,7 +173,7 @@ const EntourageSection = () => {
                 Bride's Maid
               </h3>
               {entourageData.bridesmaids.map((name, index) => (
-                <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 text-left" data-testid={`bridesmaid-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left" data-testid={`bridesmaid-${index}`}>
                   {name}
                 </p>
               ))}
@@ -193,7 +193,7 @@ const EntourageSection = () => {
               Flower Girl
             </h3>
             {entourageData.flowerGirls.map((name, index) => (
-              <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1" data-testid={`flower-girl-${index}`}>
+              <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1" data-testid={`flower-girl-${index}`}>
                 {name}
               </p>
             ))}
