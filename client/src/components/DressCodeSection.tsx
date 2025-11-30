@@ -116,7 +116,7 @@ const DressCodeSection = () => {
                 <div className="mb-8">
                   <div className="flex justify-center">
                     <img 
-                      src={dressCodeImage} 
+                      src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764474464/ed9212f5-97cd-497c-8e68-d8e6c50fd12c-removebg-preview_1_if3jng.png" 
                       alt="Dress Code Illustration" 
                       className="w-full max-w-2xl rounded-lg shadow-md"
                       data-testid="img-dresscode-illustration"
