@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <img
-              src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764431418/6759bac6-a0ff-4a0f-aced-c2ce0980552f_1_xvrhfw.jpg"
+              src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764473609/image-removebg-preview_1_bxyova.png"
               alt="J&C Monogram"
               className="h-20 w-auto opacity-90 object-contain"
               style={{ maxHeight: '80px' }}
