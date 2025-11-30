@@ -2,6 +2,7 @@
 @import url('https://api.fontshare.com/v2/css?f[]=pencerio@1&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=telma@300,400,500&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=author@400,500,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -281,6 +282,10 @@
 
   .font-satoshi {
     font-family: 'Satoshi', sans-serif;
+  }
+
+  .font-author {
+    font-family: 'Author', serif;
   }
 
   /* Apply Telma to all headers except hero section and custom styled headers */
