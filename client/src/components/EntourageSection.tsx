@@ -24,22 +24,22 @@ const EntourageSection = () => {
       ]
     },
     groomsmen: [
-      "Mack Josh Bulo"
-    ],
-    bridesmaids: [
-      "April Buenaventura"
-    ],
-    bestMen: [
       "MJ Mañosca",
       "John Megryan Samartino",
       "Chito Atibagos Jr.",
       "Mark John Bulo"
     ],
-    maidsOfHonor: [
+    bridesmaids: [
       "Charena Atibagos",
       "Mikaela Jehm Bulo",
       "Faith Mose",
       "Patricia Angel Bala"
+    ],
+    bestMen: [
+      "Mack Josh Bulo"
+    ],
+    maidsOfHonor: [
+      "April Buenaventura"
     ],
     flowerGirls: [
       "Ma. Chanelle Joi Gellido"
