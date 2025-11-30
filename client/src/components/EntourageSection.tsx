@@ -120,12 +120,42 @@ const EntourageSection = () => {
           </div>
         </motion.div>
 
-        {/* Groomsmen & Bridesmaids */}
+        {/* Best Men & Maids of Honor */}
         <motion.div 
           className="mb-8 md:mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.2 }}
+        >
+          <div>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
+              Best Men & Maids of Honor
+            </h3>
+            <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
+              <div className="text-center">
+                {entourageData.bestMen.map((name, index) => (
+                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`best-man-${index}`}>
+                    {name}
+                  </p>
+                ))}
+              </div>
+              <div className="text-center">
+                {entourageData.maidsOfHonor.map((name, index) => (
+                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`maid-of-honor-${index}`}>
+                    {name}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Groomsmen & Bridesmaids */}
+        <motion.div 
+          className="mb-8 md:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
@@ -147,36 +177,6 @@ const EntourageSection = () => {
                   {name}
                 </p>
               ))}
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Best Men & Maids of Honor */}
-        <motion.div 
-          className="mb-8 md:mb-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
-        >
-          <div>
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
-              Best Men & Maids of Honor
-            </h3>
-            <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
-              <div className="text-center">
-                {entourageData.bestMen.map((name, index) => (
-                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`best-man-${index}`}>
-                    {name}
-                  </p>
-                ))}
-              </div>
-              <div className="text-center">
-                {entourageData.maidsOfHonor.map((name, index) => (
-                  <p key={index} className="text-base md:text-xl lg:text-2xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`maid-of-honor-${index}`}>
-                    {name}
-                  </p>
-                ))}
-              </div>
             </div>
           </div>
         </motion.div>
