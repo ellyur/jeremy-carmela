@@ -60,52 +60,52 @@ const DressCodeSection = () => {
                 <div className="mb-12">
                   <p className="text-base text-foreground/80 mb-6 font-satoshi">Recommended Color Palette</p>
                   <div className="flex justify-center gap-4 flex-wrap">
-                    {/* Light Blue */}
+                    {/* Dusty Blue */}
                     <div className="flex flex-col items-center gap-2">
                       <div 
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
-                        style={{ backgroundColor: '#6B8DAE' }}
-                        data-testid="color-swatch-light-blue"
+                        style={{ backgroundColor: '#4A7BA7' }}
+                        data-testid="color-swatch-dusty-blue"
                       ></div>
-                      <span className="text-sm text-foreground/70 font-satoshi">Slate Blue</span>
+                      <span className="text-sm text-foreground/70 font-satoshi">Dusty Blue</span>
                     </div>
 
-                    {/* Medium Blue */}
+                    {/* Bright Blue */}
                     <div className="flex flex-col items-center gap-2">
                       <div 
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
-                        style={{ backgroundColor: '#4A6FA5' }}
-                        data-testid="color-swatch-medium-blue"
+                        style={{ backgroundColor: '#5BA3C8' }}
+                        data-testid="color-swatch-bright-blue"
                       ></div>
-                      <span className="text-sm text-foreground/70 font-satoshi">Ocean Blue</span>
+                      <span className="text-sm text-foreground/70 font-satoshi">Sky Blue</span>
                     </div>
 
-                    {/* Light Gray */}
+                    {/* Light Blue Gray */}
                     <div className="flex flex-col items-center gap-2">
                       <div 
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
-                        style={{ backgroundColor: '#B8C5D6' }}
-                        data-testid="color-swatch-light-gray"
+                        style={{ backgroundColor: '#A8C5D8' }}
+                        data-testid="color-swatch-light-blue-gray"
                       ></div>
-                      <span className="text-sm text-foreground/70 font-satoshi">Soft Gray</span>
+                      <span className="text-sm text-foreground/70 font-satoshi">Pale Blue</span>
                     </div>
 
-                    {/* Dark Navy */}
+                    {/* Deep Navy */}
                     <div className="flex flex-col items-center gap-2">
                       <div 
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
-                        style={{ backgroundColor: '#1A2F4A' }}
-                        data-testid="color-swatch-dark-navy"
+                        style={{ backgroundColor: '#0B2340' }}
+                        data-testid="color-swatch-deep-navy"
                       ></div>
-                      <span className="text-sm text-foreground/70 font-satoshi">Navy</span>
+                      <span className="text-sm text-foreground/70 font-satoshi">Deep Navy</span>
                     </div>
 
-                    {/* Cream */}
+                    {/* Pale Cream */}
                     <div className="flex flex-col items-center gap-2">
                       <div 
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-md border-2 border-primary/20 hover:shadow-lg transition-all"
-                        style={{ backgroundColor: '#F5EFE0' }}
-                        data-testid="color-swatch-cream"
+                        style={{ backgroundColor: '#FFF8DC' }}
+                        data-testid="color-swatch-pale-cream"
                       ></div>
                       <span className="text-sm text-foreground/70 font-satoshi">Cream</span>
                     </div>
@@ -118,7 +118,7 @@ const DressCodeSection = () => {
                     <img 
                       src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764474464/ed9212f5-97cd-497c-8e68-d8e6c50fd12c-removebg-preview_1_if3jng.png" 
                       alt="Dress Code Illustration" 
-                      className="w-full max-w-2xl rounded-lg shadow-md"
+                      className="w-full max-w-sm rounded-lg shadow-md"
                       data-testid="img-dresscode-illustration"
                     />
                   </div>
