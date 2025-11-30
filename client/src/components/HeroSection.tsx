@@ -35,7 +35,7 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         </div>
         
         {/* Names */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white tracking-wide" data-testid="text-main-invitation" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white tracking-wide" data-testid="text-main-invitation" style={{ fontFamily: 'Boska, serif', fontWeight: 300, fontStyle: 'italic' }}>
           {animationsEnabled ? (
             <TypeAnimation
               sequence={[
