@@ -129,7 +129,7 @@ const EntourageSection = () => {
         >
           <div>
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
-              Best Men & Maids of Honor
+              Bestman and Maid of Honor
             </h3>
             <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
               <div className="text-center">
