@@ -79,7 +79,7 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             {entourageData.parents.map((parent, index) => (
               <div key={index} className="text-center" data-testid={`parents-section-${index}`}>
-                <h3 className="text-base md:text-xl lg:text-2xl font-display font-semibold mb-2 md:mb-3 text-primary whitespace-nowrap">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-2 md:mb-3 text-primary whitespace-nowrap">
                   {parent.label}
                 </h3>
                 {parent.names.map((name, nameIndex) => (
@@ -99,7 +99,7 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.0 }}
         >
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="principal-sponsors-title">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="principal-sponsors-title">
             {entourageData.principalSponsors.title}
           </h3>
           <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
@@ -128,7 +128,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.2 }}
         >
           <div>
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
               Bestman and Maid of Honor
             </h3>
             <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
@@ -159,7 +159,7 @@ const EntourageSection = () => {
         >
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
-              <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
                 Groom's Men
               </h3>
               {entourageData.groomsmen.map((name, index) => (
@@ -169,7 +169,7 @@ const EntourageSection = () => {
               ))}
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
-              <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
                 Bride's Maid
               </h3>
               {entourageData.bridesmaids.map((name, index) => (
@@ -189,7 +189,7 @@ const EntourageSection = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.6 }}
         >
           <div className="text-center" data-testid="flower-girl-section">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-6 text-primary">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
               Flower Girl
             </h3>
             {entourageData.flowerGirls.map((name, index) => (
