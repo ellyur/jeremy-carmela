@@ -160,7 +160,7 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center" data-testid="groomsmen-section">
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Groom's Men
+                Groomsmen
               </h3>
               {entourageData.groomsmen.map((name, index) => (
                 <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-right whitespace-nowrap" data-testid={`groomsman-${index}`}>
@@ -170,7 +170,7 @@ const EntourageSection = () => {
             </div>
             <div className="text-center" data-testid="bridesmaids-section">
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Bride's Maid
+                Bridesmaids
               </h3>
               {entourageData.bridesmaids.map((name, index) => (
                 <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left whitespace-nowrap" data-testid={`bridesmaid-${index}`}>
