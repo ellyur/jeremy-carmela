@@ -59,7 +59,7 @@ const EntourageSection = () => {
         <div className="absolute top-0 right-0 w-96 h-96 border border-accent/30 rounded-full transform translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 border border-accent/30 rounded-full transform -translate-x-1/3 translate-y-1/3"></div>
       </div>
-      <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+      <div className="max-w-6xl mx-auto px-4 text-center relative z-10 pl-[0px] pr-[0px]">
         <motion.h2 
           className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-primary mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
