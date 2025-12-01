@@ -127,25 +127,26 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.2 }}
         >
-          <div>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6 text-primary text-center" data-testid="best-men-maids-title">
-              Bestman and Maid of Honor
-            </h3>
-            <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
-              <div className="text-center">
-                {entourageData.bestMen.map((name, index) => (
-                  <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-right" data-testid={`best-man-${index}`}>
-                    {name}
-                  </p>
-                ))}
-              </div>
-              <div className="text-center">
-                {entourageData.maidsOfHonor.map((name, index) => (
-                  <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-left" data-testid={`maid-of-honor-${index}`}>
-                    {name}
-                  </p>
-                ))}
-              </div>
+          <div className="space-y-6 md:space-y-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-2 md:mb-3 text-primary whitespace-nowrap" data-testid="best-men-title">
+                Bestman
+              </h3>
+              {entourageData.bestMen.map((name, index) => (
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap" data-testid={`best-man-${index}`}>
+                  {name}
+                </p>
+              ))}
+            </div>
+            <div className="text-center">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-2 md:mb-3 text-primary whitespace-nowrap" data-testid="maid-of-honor-title">
+                Maid of Honor
+              </h3>
+              {entourageData.maidsOfHonor.map((name, index) => (
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap" data-testid={`maid-of-honor-${index}`}>
+                  {name}
+                </p>
+              ))}
             </div>
           </div>
         </motion.div>
@@ -173,7 +174,7 @@ const EntourageSection = () => {
                 Bridesmaids
               </h3>
               {entourageData.bridesmaids.map((name, index) => (
-                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left whitespace-nowrap ml-[9px] mr-[9px]" data-testid={`bridesmaid-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left whitespace-nowrap ml-[4px] mr-[4px]" data-testid={`bridesmaid-${index}`}>
                   {name}
                 </p>
               ))}
