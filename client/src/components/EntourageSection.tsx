@@ -79,7 +79,7 @@ const EntourageSection = () => {
           <div className="space-y-6 md:space-y-8 max-w-4xl mx-auto">
             {entourageData.parents.map((parent, index) => (
               <div key={index} className="text-center" data-testid={`parents-section-${index}`}>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-2 md:mb-3 text-primary whitespace-nowrap">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-2 md:mb-3 text-primary whitespace-nowrap">
                   {parent.label}
                 </h3>
                 {parent.names.map((name, nameIndex) => (
