@@ -157,7 +157,7 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
         >
-          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto px-2">
             <div className="text-center" data-testid="groomsmen-section">
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
                 Groomsmen
