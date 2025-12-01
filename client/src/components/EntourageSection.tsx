@@ -163,7 +163,7 @@ const EntourageSection = () => {
                 Groomsmen
               </h3>
               {entourageData.groomsmen.map((name, index) => (
-                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-right whitespace-nowrap" data-testid={`groomsman-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left md:text-right whitespace-nowrap" data-testid={`groomsman-${index}`}>
                   {name}
                 </p>
               ))}
