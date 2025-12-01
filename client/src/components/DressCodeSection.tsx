@@ -59,56 +59,41 @@ const DressCodeSection = () => {
                 {/* Color Palette Swatches */}
                 <div className="mb-12">
                   <p className="text-base text-foreground/80 mb-6 font-satoshi">Recommended Color Palette</p>
-                  <div className="flex justify-center gap-1 md:gap-2 flex-nowrap overflow-x-auto pb-2">
+                  <div className="flex justify-center gap-2 md:gap-3 flex-nowrap overflow-x-auto pb-2">
                     {/* Dusty Blue */}
-                    <div className="flex flex-col items-center gap-0.5 flex-shrink-0">
-                      <div 
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all"
-                        style={{ backgroundColor: '#4A7BA7' }}
-                        data-testid="color-swatch-dusty-blue"
-                      ></div>
-                      <span className="text-xs text-foreground/70 font-satoshi whitespace-nowrap">Dusty Blue</span>
-                    </div>
+                    <div 
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
+                      style={{ backgroundColor: '#4A7BA7' }}
+                      data-testid="color-swatch-dusty-blue"
+                    ></div>
 
                     {/* Bright Blue */}
-                    <div className="flex flex-col items-center gap-0.5 flex-shrink-0">
-                      <div 
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all"
-                        style={{ backgroundColor: '#5BA3C8' }}
-                        data-testid="color-swatch-bright-blue"
-                      ></div>
-                      <span className="text-xs text-foreground/70 font-satoshi whitespace-nowrap">Sky Blue</span>
-                    </div>
+                    <div 
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
+                      style={{ backgroundColor: '#5BA3C8' }}
+                      data-testid="color-swatch-bright-blue"
+                    ></div>
 
                     {/* Light Blue Gray */}
-                    <div className="flex flex-col items-center gap-0.5 flex-shrink-0">
-                      <div 
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all"
-                        style={{ backgroundColor: '#A8C5D8' }}
-                        data-testid="color-swatch-light-blue-gray"
-                      ></div>
-                      <span className="text-xs text-foreground/70 font-satoshi whitespace-nowrap">Pale Blue</span>
-                    </div>
+                    <div 
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
+                      style={{ backgroundColor: '#A8C5D8' }}
+                      data-testid="color-swatch-light-blue-gray"
+                    ></div>
 
                     {/* Deep Navy */}
-                    <div className="flex flex-col items-center gap-0.5 flex-shrink-0">
-                      <div 
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all"
-                        style={{ backgroundColor: '#0B2340' }}
-                        data-testid="color-swatch-deep-navy"
-                      ></div>
-                      <span className="text-xs text-foreground/70 font-satoshi whitespace-nowrap">Deep Navy</span>
-                    </div>
+                    <div 
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
+                      style={{ backgroundColor: '#0B2340' }}
+                      data-testid="color-swatch-deep-navy"
+                    ></div>
 
                     {/* Pale Cream */}
-                    <div className="flex flex-col items-center gap-0.5 flex-shrink-0">
-                      <div 
-                        className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all"
-                        style={{ backgroundColor: '#FFF8DC' }}
-                        data-testid="color-swatch-pale-cream"
-                      ></div>
-                      <span className="text-xs text-foreground/70 font-satoshi whitespace-nowrap">Cream</span>
-                    </div>
+                    <div 
+                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
+                      style={{ backgroundColor: '#FFF8DC' }}
+                      data-testid="color-swatch-pale-cream"
+                    ></div>
                   </div>
                 </div>
 
