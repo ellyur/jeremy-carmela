@@ -300,7 +300,6 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                       </svg>
                     </div>
                   </div>
-                  </div>
                 </div>
 
                 {/* Decorative Flower - Lower Right */}
