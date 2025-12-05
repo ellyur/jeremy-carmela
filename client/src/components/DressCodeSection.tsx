@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import dressCodeImage from '@assets/dresscode_1762266869903.png';
+import menDressCode from '@assets/e7463b8b-361e-4361-b7d3-cb7dd182dfe3-removebg-preview_1764916057272.png';
+import womenDressCode from '@assets/2663d919-b2c5-4b2c-a213-f62134a08ad9-removebg-preview_1764916057273.png';
 
 const DressCodeSection = () => {
   return (
@@ -97,14 +98,20 @@ const DressCodeSection = () => {
                   </div>
                 </div>
 
-                {/* Dress Code Illustration */}
+                {/* Dress Code Illustrations */}
                 <div className="mb-8">
-                  <div className="flex justify-center">
+                  <div className="flex justify-center items-end gap-8 md:gap-16">
                     <img 
-                      src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764474464/ed9212f5-97cd-497c-8e68-d8e6c50fd12c-removebg-preview_1_if3jng.png" 
-                      alt="Dress Code Illustration" 
-                      className="w-full max-w-xs rounded-lg shadow-md"
-                      data-testid="img-dresscode-illustration"
+                      src={menDressCode}
+                      alt="Men's Dress Code" 
+                      className="h-40 md:h-52 lg:h-60 object-contain"
+                      data-testid="img-dresscode-men"
+                    />
+                    <img 
+                      src={womenDressCode}
+                      alt="Women's Dress Code" 
+                      className="h-40 md:h-52 lg:h-60 object-contain"
+                      data-testid="img-dresscode-women"
                     />
                   </div>
                 </div>
