@@ -250,6 +250,15 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                   <p className="text-lg sm:text-xl leading-relaxed text-foreground/90 font-satoshi" data-testid={`text-story-card-${card.id}-text`}>
                     {card.text}
                   </p>
+
+                  {/* SVG Decorative Element */}
+                  <div className="flex items-center space-x-4 pt-4 sm:pt-6">
+                    <div className="w-12 sm:w-16 h-px" style={{ backgroundColor: '#D4A853' }}></div>
+                    <svg className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: '#D4A853' }} viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.04L12,21.35Z"/>
+                    </svg>
+                    <div className="w-12 sm:w-16 h-px" style={{ backgroundColor: '#D4A853' }}></div>
+                  </div>
                 </div>
 
                 {/* Image */}
