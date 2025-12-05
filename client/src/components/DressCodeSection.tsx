@@ -49,53 +49,53 @@ const DressCodeSection = () => {
               transition={{ duration: 0.6, delay: 8.3 }}
             >
               {/* Layout: Man Image | Text & Colors | Woman Image */}
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+              <div className="flex flex-row items-center justify-center gap-2 md:gap-6">
                 {/* Man Image - Left */}
-                <div className="flex-shrink-0 order-2 md:order-1">
+                <div className="flex-shrink-0">
                   <img 
                     src={menDressCode}
                     alt="Men's Dress Code" 
-                    className="h-48 md:h-56 lg:h-64 object-contain"
+                    className="h-28 sm:h-40 md:h-56 lg:h-64 object-contain"
                     data-testid="img-dresscode-men"
                   />
                 </div>
 
                 {/* Center Content - Text & Color Palette */}
-                <div className="text-center flex-1 order-1 md:order-2 max-w-md">
-                  <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-4">
+                <div className="text-center flex-1 max-w-xs md:max-w-md px-1">
+                  <h3 className="text-sm sm:text-base md:text-2xl font-display font-medium text-foreground mb-2 md:mb-4">
                     Strictly Semi-Formal / Formal Attire
                   </h3>
                   
-                  <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed font-satoshi">
+                  <p className="text-xs sm:text-sm md:text-lg text-foreground mb-3 md:mb-6 leading-relaxed font-satoshi">
                     We encourage you to dress according to our wedding colors
                   </p>
 
                   {/* Color Palette Swatches */}
                   <div>
-                    <p className="text-sm text-foreground/80 mb-4 font-satoshi">Recommended Color Palette</p>
-                    <div className="flex justify-center gap-2 md:gap-3 flex-nowrap">
+                    <p className="text-xs md:text-sm text-foreground/80 mb-2 md:mb-4 font-satoshi">Recommended Color Palette</p>
+                    <div className="flex justify-center gap-1 md:gap-3 flex-nowrap">
                       <div 
-                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
                         style={{ backgroundColor: '#4A7BA7' }}
                         data-testid="color-swatch-dusty-blue"
                       ></div>
                       <div 
-                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
                         style={{ backgroundColor: '#5BA3C8' }}
                         data-testid="color-swatch-bright-blue"
                       ></div>
                       <div 
-                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
                         style={{ backgroundColor: '#A8C5D8' }}
                         data-testid="color-swatch-light-blue-gray"
                       ></div>
                       <div 
-                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
                         style={{ backgroundColor: '#0B2340' }}
                         data-testid="color-swatch-deep-navy"
                       ></div>
                       <div 
-                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
                         style={{ backgroundColor: '#FFF8DC' }}
                         data-testid="color-swatch-pale-cream"
                       ></div>
@@ -104,11 +104,11 @@ const DressCodeSection = () => {
                 </div>
 
                 {/* Woman Image - Right */}
-                <div className="flex-shrink-0 order-3">
+                <div className="flex-shrink-0">
                   <img 
                     src={womenDressCode}
                     alt="Women's Dress Code" 
-                    className="h-48 md:h-56 lg:h-64 object-contain"
+                    className="h-28 sm:h-40 md:h-56 lg:h-64 object-contain"
                     data-testid="img-dresscode-women"
                   />
                 </div>
