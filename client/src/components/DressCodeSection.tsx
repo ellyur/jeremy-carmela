@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import menDressCode from '@assets/e7463b8b-361e-4361-b7d3-cb7dd182dfe3-removebg-preview_1764916057272.png';
-import womenDressCode from '@assets/2663d919-b2c5-4b2c-a213-f62134a08ad9-removebg-preview_1764916057273.png';
+import menDressCode from '@assets/image-removebg-preview_(1)_1764916590573.png';
+import womenDressCode from '@assets/image-removebg-preview_(2)_1764916583974.png';
 
 const DressCodeSection = () => {
   return (
