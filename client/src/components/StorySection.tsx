@@ -252,18 +252,6 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                     {card.text}
                   </p>
 
-                  {/* Read Full Story Button - Only on last card */}
-                  {card.hasButton && (
-                    <button
-                      onClick={() => setShowFullStory(true)}
-                      className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300 font-satoshi"
-                      data-testid="button-read-full-story"
-                    >
-                      <BookOpen className="w-5 h-5" />
-                      <span>Read Full Story</span>
-                    </button>
-                  )}
-
                   {/* SVG Decorative Element */}
                   <div className="flex items-center space-x-4 pt-4 sm:pt-6">
                     <div className="w-12 sm:w-16 h-px" style={{ backgroundColor: '#D4A853' }}></div>
@@ -339,6 +327,16 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                     Ecclesiastes 3:11
                   </p>
                 </div>
+
+                {/* Read Full Story Button */}
+                <button
+                  onClick={() => setShowFullStory(true)}
+                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300 font-satoshi"
+                  data-testid="button-read-full-story"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  <span>Read Full Story</span>
+                </button>
 
                 {/* SVG Decorative Element */}
                 <div className="flex items-center justify-center space-x-4 pt-4 sm:pt-6">
