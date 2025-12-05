@@ -276,16 +276,14 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
 
                 {/* Image */}
                 <div className={`relative self-start ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px] mx-auto relative">
-                    {/* Consistent aspect ratio image with object-contain to prevent cropping */}
-                    <div className="aspect-square w-full">
-                      <img
-                        src={card.image}
-                        alt={`Story moment ${index + 1}`}
-                        className="w-full h-full object-contain rounded-2xl shadow-lg bg-white"
-                        data-testid={`img-story-card-${card.id}`}
-                      />
-                    </div>
+                  <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[380px] mx-auto relative">
+                    {/* Full image visible without cropping */}
+                    <img
+                      src={card.image}
+                      alt={`Story moment ${index + 1}`}
+                      className="w-full h-auto object-contain rounded-2xl shadow-lg"
+                      data-testid={`img-story-card-${card.id}`}
+                    />
 
                     {/* Floating decorative elements */}
                     <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4">
