@@ -158,23 +158,20 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.4 }}
         >
-          <div className="grid grid-cols-2 gap-1 md:gap-8 max-w-6xl mx-auto">
-            <div className="text-center" data-testid="groomsmen-section">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Groomsmen
-              </h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="groomsmen-bridesmaids-title">
+            Groomsmen & Bridesmaids
+          </h3>
+          <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
+            <div className="text-center">
               {entourageData.groomsmen.map((name, index) => (
-                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-right whitespace-nowrap pl-[-3px] pr-[-3px] ml-[-3px] mr-[-3px]" data-testid={`groomsman-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-center" data-testid={`groomsman-${index}`}>
                   {name}
                 </p>
               ))}
             </div>
-            <div className="text-center" data-testid="bridesmaids-section">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-3 md:mb-6 text-primary">
-                Bridesmaids
-              </h3>
+            <div className="text-center">
               {entourageData.bridesmaids.map((name, index) => (
-                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 text-left whitespace-nowrap ml-[4px] mr-[4px]" data-testid={`bridesmaid-${index}`}>
+                <p key={index} className="text-lg md:text-2xl lg:text-3xl font-author text-foreground mb-1 whitespace-nowrap text-center" data-testid={`bridesmaid-${index}`}>
                   {name}
                 </p>
               ))}
