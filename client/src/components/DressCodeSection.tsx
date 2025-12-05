@@ -42,81 +42,78 @@ const DressCodeSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 8.1 }}
         >
-          <div className="bg-card/30 border border-border rounded-xl p-8 md:p-12 shadow-soft hover-elegant transition-all duration-500 relative">
-            <div className="text-center max-w-3xl mx-auto">
-              <motion.div
-                initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.6, delay: 8.3 }}
-              >
-                <h3 className="text-2xl md:text-3xl font-display font-medium text-foreground mb-6">
-                  Strictly Semi-Formal / Formal Attire
-                </h3>
-                
-                <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed font-satoshi">
-                  We encourage you to dress according to our wedding colors
-                </p>
+          <div className="bg-card/30 border border-border rounded-xl p-6 md:p-10 shadow-soft hover-elegant transition-all duration-500 relative">
+            <motion.div
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.6, delay: 8.3 }}
+            >
+              {/* Layout: Man Image | Text & Colors | Woman Image */}
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+                {/* Man Image - Left */}
+                <div className="flex-shrink-0 order-2 md:order-1">
+                  <img 
+                    src={menDressCode}
+                    alt="Men's Dress Code" 
+                    className="h-48 md:h-56 lg:h-64 object-contain"
+                    data-testid="img-dresscode-men"
+                  />
+                </div>
 
-                {/* Color Palette Swatches */}
-                <div className="mb-12">
-                  <p className="text-base text-foreground/80 mb-6 font-satoshi">Recommended Color Palette</p>
-                  <div className="flex justify-center gap-2 md:gap-3 flex-nowrap overflow-x-auto pb-2">
-                    {/* Dusty Blue */}
-                    <div 
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
-                      style={{ backgroundColor: '#4A7BA7' }}
-                      data-testid="color-swatch-dusty-blue"
-                    ></div>
+                {/* Center Content - Text & Color Palette */}
+                <div className="text-center flex-1 order-1 md:order-2 max-w-md">
+                  <h3 className="text-xl md:text-2xl font-display font-medium text-foreground mb-4">
+                    Strictly Semi-Formal / Formal Attire
+                  </h3>
+                  
+                  <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed font-satoshi">
+                    We encourage you to dress according to our wedding colors
+                  </p>
 
-                    {/* Bright Blue */}
-                    <div 
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
-                      style={{ backgroundColor: '#5BA3C8' }}
-                      data-testid="color-swatch-bright-blue"
-                    ></div>
-
-                    {/* Light Blue Gray */}
-                    <div 
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
-                      style={{ backgroundColor: '#A8C5D8' }}
-                      data-testid="color-swatch-light-blue-gray"
-                    ></div>
-
-                    {/* Deep Navy */}
-                    <div 
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
-                      style={{ backgroundColor: '#0B2340' }}
-                      data-testid="color-swatch-deep-navy"
-                    ></div>
-
-                    {/* Pale Cream */}
-                    <div 
-                      className="w-9 h-9 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 hover:shadow-md transition-all flex-shrink-0"
-                      style={{ backgroundColor: '#FFF8DC' }}
-                      data-testid="color-swatch-pale-cream"
-                    ></div>
+                  {/* Color Palette Swatches */}
+                  <div>
+                    <p className="text-sm text-foreground/80 mb-4 font-satoshi">Recommended Color Palette</p>
+                    <div className="flex justify-center gap-2 md:gap-3 flex-nowrap">
+                      <div 
+                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        style={{ backgroundColor: '#4A7BA7' }}
+                        data-testid="color-swatch-dusty-blue"
+                      ></div>
+                      <div 
+                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        style={{ backgroundColor: '#5BA3C8' }}
+                        data-testid="color-swatch-bright-blue"
+                      ></div>
+                      <div 
+                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        style={{ backgroundColor: '#A8C5D8' }}
+                        data-testid="color-swatch-light-blue-gray"
+                      ></div>
+                      <div 
+                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        style={{ backgroundColor: '#0B2340' }}
+                        data-testid="color-swatch-deep-navy"
+                      ></div>
+                      <div 
+                        className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
+                        style={{ backgroundColor: '#FFF8DC' }}
+                        data-testid="color-swatch-pale-cream"
+                      ></div>
+                    </div>
                   </div>
                 </div>
 
-                {/* Dress Code Illustrations */}
-                <div className="mb-8">
-                  <div className="flex justify-center items-end gap-8 md:gap-16">
-                    <img 
-                      src={menDressCode}
-                      alt="Men's Dress Code" 
-                      className="h-40 md:h-52 lg:h-60 object-contain"
-                      data-testid="img-dresscode-men"
-                    />
-                    <img 
-                      src={womenDressCode}
-                      alt="Women's Dress Code" 
-                      className="h-40 md:h-52 lg:h-60 object-contain"
-                      data-testid="img-dresscode-women"
-                    />
-                  </div>
+                {/* Woman Image - Right */}
+                <div className="flex-shrink-0 order-3">
+                  <img 
+                    src={womenDressCode}
+                    alt="Women's Dress Code" 
+                    className="h-48 md:h-56 lg:h-64 object-contain"
+                    data-testid="img-dresscode-women"
+                  />
                 </div>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
 
