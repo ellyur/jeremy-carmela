@@ -276,14 +276,16 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
 
                 {/* Image */}
                 <div className={`relative self-start ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="aspect-square max-w-[70vw] sm:max-w-sm md:max-w-md mx-auto relative">
-                    {/* Square image with rounded corners on all screen sizes */}
-                    <img
-                      src={card.image}
-                      alt={`Story moment ${index + 1}`}
-                      className="w-full h-full object-cover rounded-2xl shadow-lg"
-                      data-testid={`img-story-card-${card.id}`}
-                    />
+                  <div className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px] mx-auto relative">
+                    {/* Consistent aspect ratio image with object-contain to prevent cropping */}
+                    <div className="aspect-square w-full">
+                      <img
+                        src={card.image}
+                        alt={`Story moment ${index + 1}`}
+                        className="w-full h-full object-contain rounded-2xl shadow-lg bg-white"
+                        data-testid={`img-story-card-${card.id}`}
+                      />
+                    </div>
 
                     {/* Floating decorative elements */}
                     <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4">
@@ -297,6 +299,7 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                         <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.04L12,21.35Z"/>
                       </svg>
                     </div>
+                  </div>
                   </div>
                 </div>
 
