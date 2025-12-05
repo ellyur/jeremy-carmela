@@ -55,7 +55,7 @@ const DressCodeSection = () => {
                   <img 
                     src={menDressCode}
                     alt="Men's Dress Code" 
-                    className="h-28 sm:h-40 md:h-56 lg:h-64 object-contain"
+                    className="h-40 sm:h-52 md:h-72 lg:h-80 object-contain"
                     data-testid="img-dresscode-men"
                   />
                 </div>
@@ -108,7 +108,7 @@ const DressCodeSection = () => {
                   <img 
                     src={womenDressCode}
                     alt="Women's Dress Code" 
-                    className="h-28 sm:h-40 md:h-56 lg:h-64 object-contain"
+                    className="h-40 sm:h-52 md:h-72 lg:h-80 object-contain"
                     data-testid="img-dresscode-women"
                   />
                 </div>
