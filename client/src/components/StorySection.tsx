@@ -152,7 +152,7 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-
+    
     setMousePosition(prev => ({
       ...prev,
       [cardId]: { x, y }
@@ -199,7 +199,7 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
           <p className="text-base sm:text-lg max-w-2xl mx-auto mb-4 text-foreground/90 font-satoshi">
             Scroll vertically to journey through our love story horizontally
           </p>
-
+          
           {/* SVG Arrow Indicator */}
           <div className="flex items-center justify-center space-x-4 mt-6 sm:mt-8">
             <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary animate-bounce" viewBox="0 0 24 24">
@@ -242,11 +242,11 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                   <div className="mb-4 sm:mb-6">
                     <card.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-accent" strokeWidth={1.5} />
                   </div>
-
+                  
                   <h3 className="text-3xl sm:text-4xl lg:text-5xl font-script italic mb-4 sm:mb-6 text-foreground" data-testid={`text-story-card-${card.id}-title`}>
                     {card.title}
                   </h3>
-
+                  
                   <p className="text-lg sm:text-xl leading-relaxed text-foreground/90 font-satoshi" data-testid={`text-story-card-${card.id}-text`}>
                     {card.text}
                   </p>
@@ -304,11 +304,11 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                 <div className="mb-4 sm:mb-6 flex justify-center">
                   <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" style={{ color: '#D4A853' }} strokeWidth={1.5} />
                 </div>
-
+                
                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-script italic mb-4 sm:mb-6 text-foreground" data-testid="text-story-promise-title">
                   God's Promise
                 </h3>
-
+                
                 <div className="space-y-4">
                   <p className="text-xl sm:text-2xl leading-relaxed italic text-foreground/90" data-testid="text-story-promise-verse">
                     "He has made everything beautiful in its time."
