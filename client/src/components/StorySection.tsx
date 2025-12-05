@@ -55,7 +55,8 @@ const StorySection = () => {
       title: "Forever After",
       text: "Our journey hasn't always been perfect. We've had our ups and downs, but we never gave up. We grew stronger, choosing each other over and over again. Now here we are, ready to say I do.",
       image: storyImage5,
-      icon: Church
+      icon: Church,
+      hasButton: true
     }
   ];
 
@@ -251,6 +252,18 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                     {card.text}
                   </p>
 
+                  {/* Read Full Story Button - Only on last card */}
+                  {card.hasButton && (
+                    <button
+                      onClick={() => setShowFullStory(true)}
+                      className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300 font-satoshi"
+                      data-testid="button-read-full-story"
+                    >
+                      <BookOpen className="w-5 h-5" />
+                      <span>Read Full Story</span>
+                    </button>
+                  )}
+
                   {/* SVG Decorative Element */}
                   <div className="flex items-center space-x-4 pt-4 sm:pt-6">
                     <div className="w-12 sm:w-16 h-px" style={{ backgroundColor: '#D4A853' }}></div>
@@ -263,12 +276,12 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
 
                 {/* Image */}
                 <div className={`relative self-start ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[380px] mx-auto relative">
-                    {/* Full image visible without cropping */}
+                  <div className="aspect-square max-w-[70vw] sm:max-w-sm md:max-w-md mx-auto relative">
+                    {/* Square image with rounded corners on all screen sizes */}
                     <img
                       src={card.image}
                       alt={`Story moment ${index + 1}`}
-                      className="w-full h-auto object-contain rounded-2xl shadow-lg"
+                      className="w-full h-full object-cover rounded-2xl shadow-lg"
                       data-testid={`img-story-card-${card.id}`}
                     />
 
@@ -326,16 +339,6 @@ And now, here we are… after all the years, the laughter, the lessons, and the 
                     Ecclesiastes 3:11
                   </p>
                 </div>
-
-                {/* Read Full Story Button */}
-                <button
-                  onClick={() => setShowFullStory(true)}
-                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300 font-satoshi"
-                  data-testid="button-read-full-story"
-                >
-                  <BookOpen className="w-5 h-5" />
-                  <span>Read Full Story</span>
-                </button>
 
                 {/* SVG Decorative Element */}
                 <div className="flex items-center justify-center space-x-4 pt-4 sm:pt-6">
