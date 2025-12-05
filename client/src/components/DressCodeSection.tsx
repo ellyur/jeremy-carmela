@@ -62,17 +62,17 @@ const DressCodeSection = () => {
 
                 {/* Center Content - Text & Color Palette */}
                 <div className="text-center flex-1 max-w-xs md:max-w-md px-1">
-                  <h3 className="text-sm sm:text-base md:text-2xl font-display font-medium text-foreground mb-2 md:mb-4">
+                  <h3 className="text-sm sm:text-base md:text-2xl font-display font-medium text-foreground mb-1 md:mb-2">
                     Strictly Semi-Formal / Formal Attire
                   </h3>
                   
-                  <p className="text-xs sm:text-sm md:text-lg text-foreground mb-3 md:mb-6 leading-relaxed font-satoshi">
+                  <p className="text-xs sm:text-sm md:text-lg text-foreground mb-2 md:mb-3 leading-snug font-satoshi">
                     We encourage you to dress according to our wedding colors
                   </p>
 
                   {/* Color Palette Swatches */}
                   <div>
-                    <p className="text-xs md:text-sm text-foreground/80 mb-2 md:mb-4 font-satoshi">Recommended Color Palette</p>
+                    <p className="text-xs md:text-sm text-foreground/80 mb-1 md:mb-2 font-satoshi">Recommended Color Palette</p>
                     <div className="flex justify-center gap-1 md:gap-3 flex-nowrap">
                       <div 
                         className="w-5 h-5 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full shadow-sm border border-primary/20 flex-shrink-0"
