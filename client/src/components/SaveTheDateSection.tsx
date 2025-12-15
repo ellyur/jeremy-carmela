@@ -1,7 +1,44 @@
 
 import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
-const SaveTheDateSection = () => {
+interface SaveTheDateSectionProps {
+  audioRef?: React.RefObject<HTMLAudioElement>;
+}
+
+const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    // Enable YouTube iframe API
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+
+    // YouTube API ready callback
+    (window as any).onYouTubeIframeAPIReady = () => {
+      if (iframeRef.current && audioRef?.current) {
+        const player = new (window as any).YT.Player(iframeRef.current, {
+          events: {
+            onStateChange: (event: any) => {
+              // YT.PlayerState.PLAYING = 1
+              // YT.PlayerState.PAUSED = 2
+              // YT.PlayerState.ENDED = 0
+              if (event.data === 1 && audioRef.current) {
+                // Video is playing, pause background music
+                audioRef.current.pause();
+              } else if ((event.data === 2 || event.data === 0) && audioRef.current) {
+                // Video is paused or ended, resume background music
+                audioRef.current.play();
+              }
+            }
+          }
+        });
+      }
+    };
+  }, [audioRef]);
+
   return (
     <motion.section 
       className="section-pastel-blue bg-white relative overflow-hidden py-20 px-4 pt-[0px] pb-[0px]"
@@ -33,8 +70,9 @@ const SaveTheDateSection = () => {
         <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
           <div className="relative pb-[56.25%] h-0">
             <iframe
+              ref={iframeRef}
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/S5DMe6wngno"
+              src="https://www.youtube.com/embed/S5DMe6wngno?enablejsapi=1"
               title="Save the Date Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

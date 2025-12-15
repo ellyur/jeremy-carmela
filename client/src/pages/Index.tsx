@@ -79,13 +79,13 @@ const Index = () => {
           <HeroSection audioRef={audioRef} />
         <InvitationRevealSection />
         <CountdownSection />
-        <StorySection />
+        <SaveTheDateSection audioRef={audioRef} />
+        <VenueSection />
         <CoverSection
           imageUrl={cover1Image}
           alt="Jeremy & Carmela Wedding Cover 1"
         />
         <ScrollTriggeredTimeline />
-        <SaveTheDateSection />
         <VenueSection />
         <CoverSection
           imageUrl={cover2Image}
