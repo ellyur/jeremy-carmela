@@ -187,7 +187,7 @@ const VenueSection = () => {
                 </div>
               </div>
               </motion.div>
-            </React.Fragmentagment>
+            </React.Fragment>
           ))}
         </div>
       </div>
