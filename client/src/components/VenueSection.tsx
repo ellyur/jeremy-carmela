@@ -1,4 +1,5 @@
 "use client";;
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -57,14 +58,14 @@ const VenueSection = () => {
         {/* Venues List */}
         <div className="space-y-20">
           {venues.map((venue, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 6.8 + (index * 0.4) }}
-            >
-              {/* Modern Creative Container */}
-              <div className="relative max-w-5xl mx-auto">
+            <React.Fragment key={index}>
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 6.8 + (index * 0.4) }}
+              >
+                {/* Modern Creative Container */}
+                <div className="relative max-w-5xl mx-auto">
                 {/* Decorative background layers */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-2xl blur-xl opacity-60" />
                 <div className="absolute -inset-2 bg-card/30 backdrop-blur-sm rounded-xl" />
@@ -185,7 +186,37 @@ const VenueSection = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+              </motion.div>
+              
+              {/* Video between Ceremony and Reception */}
+              {index === 0 && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 7.2 }}
+                  className="my-20"
+                >
+                  <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
+                    <video
+                      src="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        height: 'auto',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        margin: 0,
+                        padding: 0
+                      }}
+                    />
+                  </div>
+                </motion.div>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
