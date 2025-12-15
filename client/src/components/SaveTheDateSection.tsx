@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const SaveTheDateSection = () => {
   return (
     <motion.section 
-      className="section-pastel-blue bg-white relative overflow-hidden py-20 px-4"
+      className="section-pastel-blue bg-white relative overflow-hidden py-20 px-4 pt-[0px] pb-[0px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -15,7 +15,6 @@ const SaveTheDateSection = () => {
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-accent/30 rounded-full"></div>
         <div className="absolute top-1/3 right-1/3 w-24 h-24 border-2 border-accent/30 rotate-45"></div>
       </div>
-
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
         <motion.div 
