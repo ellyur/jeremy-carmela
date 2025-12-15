@@ -77,7 +77,10 @@ const Index = () => {
         <Navigation />
 
         <main className="relative z-10 space-y-0">
-          <HeroSection audioRef={audioRef} />
+          <CoverSection
+          videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
+          alt="Jeremy & Carmela Wedding Video 1"
+        />
         <InvitationRevealSection />
         <CountdownSection />
         <StorySection />
@@ -88,6 +91,7 @@ const Index = () => {
         <ScrollTriggeredTimeline />
         <SaveTheDateSection audioRef={audioRef} />
         <VenueSection />
+        <HeroSection audioRef={audioRef} />
         <CoverSection
           imageUrl={cover2Image}
           alt="Jeremy & Carmela Wedding Cover 2"

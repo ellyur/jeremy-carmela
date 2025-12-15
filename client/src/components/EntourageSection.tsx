@@ -42,7 +42,8 @@ const EntourageSection = () => {
       "April Buenaventura"
     ],
     flowerGirls: [
-      "Ma. Chanelle Joi Gellido"
+      "Ma. Chanelle Joi Gellido",
+      "Maureen Yohanne C. Bulo"
     ]
   };
 

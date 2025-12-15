@@ -52,27 +52,13 @@ const GiftSection = () => {
               Should you wish to extend your generosity, a token of love and support toward our future together would be deeply appreciated.
             </p>
 
-            {/* QR Codes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* GCash */}
-              <div className="flex flex-col items-center">
-                <img 
-                  src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811525/gcash_yz7svs.png"
-                  alt="GCash QR Code"
-                  className="w-[512px] h-[512px] object-contain mb-4"
-                />
-                <p className="text-sm text-foreground/80 font-satoshi">GCash</p>
-              </div>
-
-              {/* EastWest */}
-              <div className="flex flex-col items-center">
-                <img 
-                  src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811534/eastwest_cpj3mk.png"
-                  alt="EastWest Bank QR Code"
-                  className="w-[512px] h-[512px] object-contain mb-4"
-                />
-                <p className="text-sm text-foreground/80 font-satoshi">EastWest Bank</p>
-              </div>
+            {/* QR Code */}
+            <div className="flex justify-center">
+              <img 
+                src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765813494/QR_skyykk.png"
+                alt="Gift QR Code"
+                className="max-w-full h-auto object-contain"
+              />
             </div>
           </div>
         </motion.div>

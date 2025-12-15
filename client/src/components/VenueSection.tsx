@@ -187,36 +187,7 @@ const VenueSection = () => {
                 </div>
               </div>
               </motion.div>
-              
-              {/* Video between Ceremony and Reception */}
-              {index === 0 && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, ease: "easeOut", delay: 7.2 }}
-                  className="my-20"
-                >
-                  <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden">
-                    <video
-                      src="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        height: 'auto',
-                        objectFit: 'cover',
-                        objectPosition: 'center',
-                        margin: 0,
-                        padding: 0
-                      }}
-                    />
-                  </div>
-                </motion.div>
-              )}
-            </React.Fragment>
+            </React.Fragmentagment>
           ))}
         </div>
       </div>
