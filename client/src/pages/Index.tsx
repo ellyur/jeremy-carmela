@@ -9,6 +9,7 @@ import cover3Image from '@assets/cover3_1762267751414.JPG';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
+import SaveTheDateSection from '@/components/SaveTheDateSection';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
 import HashtagGiftsSection from '@/components/HashtagGiftsSection';
@@ -84,6 +85,7 @@ const Index = () => {
           alt="Jeremy & Carmela Wedding Cover 1"
         />
         <ScrollTriggeredTimeline />
+        <SaveTheDateSection />
         <VenueSection />
         <CoverSection
           imageUrl={cover2Image}
