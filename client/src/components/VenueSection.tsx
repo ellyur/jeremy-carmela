@@ -189,7 +189,7 @@ const VenueSection = () => {
               </motion.div>
               {/* Cover Image between Ceremony and Reception */}
               {index === 0 && (
-                <div className="my-8">
+                <div className="relative w-screen left-1/2 -translate-x-1/2 my-8">
                   <img 
                     src="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764433675/dcb18a41-3ffc-4e3f-94a2-23bfcb46fc2e_buwoec.jpg"
                     alt="Jeremy & Carmela Wedding Cover - Hero Image"
