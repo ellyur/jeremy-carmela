@@ -12,6 +12,7 @@ import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import SaveTheDateSection from '@/components/SaveTheDateSection';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
+import GiftSection from '@/components/GiftSection';
 import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
@@ -79,19 +80,20 @@ const Index = () => {
           <HeroSection audioRef={audioRef} />
         <InvitationRevealSection />
         <CountdownSection />
-        <SaveTheDateSection audioRef={audioRef} />
-        <VenueSection />
+        <StorySection />
         <CoverSection
           imageUrl={cover1Image}
           alt="Jeremy & Carmela Wedding Cover 1"
         />
         <ScrollTriggeredTimeline />
+        <SaveTheDateSection audioRef={audioRef} />
         <VenueSection />
         <CoverSection
-          imageUrl={cover2Image}
-          alt="Jeremy & Carmela Wedding Cover 2"
+          videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
+          alt="Jeremy & Carmela Wedding Video 1"
         />
         <DressCodeSection />
+        <GiftSection />
         <CoverSection
           videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/2_zvvelw.mp4"
           alt="Jeremy & Carmela Wedding Video 2"

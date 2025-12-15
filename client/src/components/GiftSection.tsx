@@ -1,85 +1,94 @@
-import { Heart, Gift, Home } from 'lucide-react';
+
 import { motion } from 'framer-motion';
-import giftSectionBg from '@assets/gift-section_1760518273235.png';
+import { Gift } from 'lucide-react';
 
 const GiftSection = () => {
   return (
     <motion.section 
-      className="section-hard-blue bg-white py-20 px-4 relative overflow-hidden"
+      id="gifts" 
+      className="section-pastel-blue bg-white relative overflow-hidden py-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 9.5 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      {/* Background Decorative Elements */}
+      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-primary/30 rounded-full animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border border-primary/30 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-primary/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 border border-primary/30 rounded-full"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 border border-primary/30 rounded-full"></div>
       </div>
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+
+      <div className="max-w-5xl mx-auto px-4 relative z-10">
         {/* Section Header */}
         <motion.div 
-          className="mb-16"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 9.8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-5xl font-display font-light italic text-gold-bright mb-8" data-testid="text-gifts-title">
-            Wedding Gifts
+          <div className="flex items-center justify-center mb-4">
+            <Gift className="w-12 h-12 text-primary" />
+          </div>
+          <h2 
+            className="text-4xl md:text-5xl font-display italic mb-4 text-primary"
+            style={{ fontFamily: 'Boska, serif', fontWeight: 400 }}
+          >
+            Gifts
           </h2>
         </motion.div>
 
-        {/* Main Gift Message */}
+        {/* Gift Message */}
         <motion.div 
           className="mb-12"
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 10.1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="bg-card/30 border border-border rounded-xl p-12 shadow-soft hover-elegant">
-            {/* Icon */}
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <Heart className="w-10 h-10 text-primary" />
-            </div>
+          <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft text-center">
+            <p className="text-base md:text-lg text-foreground leading-relaxed mb-8 font-satoshi max-w-2xl mx-auto">
+              Your presence is the greatest gift we could ever receive.
+              <br /><br />
+              Should you wish to extend your generosity, a token of love and support toward our future together would be deeply appreciated.
+            </p>
 
-            {/* Main Message */}
-            <div className="space-y-6">
-              <p className="text-xl font-body text-primary-foreground leading-relaxed">
-                As love is what the night is all about, your presence is one we can't celebrate without. But should you still believe that gift is worth giving, monetary gift for our future is a delightful blessing.
-              </p>
-            </div>
+            {/* QR Codes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              {/* GCash */}
+              <div className="flex flex-col items-center">
+                <img 
+                  src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811525/gcash_yz7svs.png"
+                  alt="GCash QR Code"
+                  className="w-64 h-64 object-contain mb-4"
+                />
+                <p className="text-sm text-foreground/80 font-satoshi">GCash</p>
+              </div>
 
-            {/* Decorative Elements */}
-            <div className="mt-8 flex justify-center items-center space-x-4">
-              <div className="w-12 h-px bg-[#ffffff]/30"></div>
-              <div className="w-3 h-3 bg-[#ffffff] rounded-full animate-float"></div>
-              <div className="w-12 h-px bg-[#ffffff]/30"></div>
+              {/* EastWest */}
+              <div className="flex flex-col items-center">
+                <img 
+                  src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811534/eastwest_cpj3mk.png"
+                  alt="EastWest Bank QR Code"
+                  className="w-64 h-64 object-contain mb-4"
+                />
+                <p className="text-sm text-foreground/80 font-satoshi">EastWest Bank</p>
+              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Payment Options */}
+        {/* Decorative Bottom Element */}
         <motion.div 
-          className="max-w-md mx-auto mb-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 10.4 }}
+          className="text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {/* GCash Payment */}
-          <div>
-            <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft hover-elegant">
-              <h3 className="text-lg font-display font-semibold text-gold-bright mb-4 text-center">GCash</h3>
-              <div className="text-center mb-4">
-                <img 
-                  src={giftSectionBg}
-                  alt="GCash QR Code"
-                  className="w-64 h-64 mx-auto object-contain"
-                />
-              </div>
-              <p className="text-primary-foreground leading-relaxed text-center">
-                Scan the QR code above to send your generous gift via GCash
-              </p>
-            </div>
+          <div className="inline-flex items-center space-x-2">
+            <div className="w-8 h-px bg-primary/30"></div>
+            <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+            <div className="w-8 h-px bg-primary/30"></div>
           </div>
         </motion.div>
       </div>
