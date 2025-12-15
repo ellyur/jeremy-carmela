@@ -89,10 +89,6 @@ const Index = () => {
         <SaveTheDateSection audioRef={audioRef} />
         <VenueSection />
         <CoverSection
-          imageUrl="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764433675/dcb18a41-3ffc-4e3f-94a2-23bfcb46fc2e_buwoec.jpg"
-          alt="Jeremy & Carmela Wedding Cover - Hero Image"
-        />
-        <CoverSection
           imageUrl={cover2Image}
           alt="Jeremy & Carmela Wedding Cover 2"
         />
