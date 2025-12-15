@@ -89,16 +89,16 @@ const Index = () => {
         <SaveTheDateSection audioRef={audioRef} />
         <VenueSection />
         <CoverSection
-          videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
-          alt="Jeremy & Carmela Wedding Video 1"
+          imageUrl={cover2Image}
+          alt="Jeremy & Carmela Wedding Cover 2"
         />
         <DressCodeSection />
-        <GiftSection />
+        <HashtagGiftsSection />
         <CoverSection
           videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/2_zvvelw.mp4"
           alt="Jeremy & Carmela Wedding Video 2"
         />
-        <HashtagGiftsSection />
+        <GiftSection />
         <MemorableMomentsSection />
         <RSVPSection />
         <CoverSection

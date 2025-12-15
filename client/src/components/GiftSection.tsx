@@ -33,7 +33,7 @@ const GiftSection = () => {
             className="text-4xl md:text-5xl font-display italic mb-4 text-primary"
             style={{ fontFamily: 'Boska, serif', fontWeight: 400 }}
           >
-            Gifts
+            Gift Guide
           </h2>
         </motion.div>
 
@@ -53,13 +53,13 @@ const GiftSection = () => {
             </p>
 
             {/* QR Codes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {/* GCash */}
               <div className="flex flex-col items-center">
                 <img 
                   src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811525/gcash_yz7svs.png"
                   alt="GCash QR Code"
-                  className="w-64 h-64 object-contain mb-4"
+                  className="w-[512px] h-[512px] object-contain mb-4"
                 />
                 <p className="text-sm text-foreground/80 font-satoshi">GCash</p>
               </div>
@@ -69,7 +69,7 @@ const GiftSection = () => {
                 <img 
                   src="https://res.cloudinary.com/dbwntiwss/image/upload/v1765811534/eastwest_cpj3mk.png"
                   alt="EastWest Bank QR Code"
-                  className="w-64 h-64 object-contain mb-4"
+                  className="w-[512px] h-[512px] object-contain mb-4"
                 />
                 <p className="text-sm text-foreground/80 font-satoshi">EastWest Bank</p>
               </div>
