@@ -9,22 +9,22 @@ const EntourageSection = () => {
     principalSponsors: {
       title: "Principal Sponsors",
       men: [
-        "Cris Morona",
-        "Daniel Angkiangco",
-        "Renato Romero",
-        "Ferdinand Manansala",
-        "Rizaldy Picart"
+        "Mr. Cris Morona",
+        "Mr. Daniel Angkiangco",
+        "Mr. Renato Romero",
+        "Mr. Ferdinand Manansala",
+        "Mr. Rizaldy Picart"
       ],
       women: [
-        "Belinda Samartino",
-        "Rochelle Angkiangco",
-        "Chanda Aquino",
-        "Aileen Claridad",
-        "Novalita Bala"
+        "Mrs. Belinda Samartino",
+        "Mrs. Rochelle Angkiangco",
+        "Mrs. Chanda Aquino",
+        "Mrs. Aileen Claridad",
+        "Mrs. Novalita Bala"
       ]
     },
     groomsmen: [
-      "MJ Mañosca",
+      "Mark Jayson Mañosca",
       "John Megryan Samartino",
       "Chito Atibagos Jr.",
       "Mark John Bulo"
