@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const EntourageSection = () => {
   const entourageData = {
     parents: [
-      { label: "Parents of the Groom", names: ["Reynaldo Bulo", "Jocylin Bulo"] },
-      { label: "Parents of the Bride", names: ["Chito Atibagos Sr.", "Gemma Atibagos"] }
+      { label: "Parents of the Groom", names: ["Mr. Reynaldo Bulo", "Mrs. Jocylin Bulo"] },
+      { label: "Parents of the Bride", names: ["Mr. Chito Atibagos Sr.", "Mrs. Gemma Atibagos"] }
     ],
     principalSponsors: {
       title: "Principal Sponsors",
