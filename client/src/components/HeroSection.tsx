@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
-const heroImage = 'https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764433675/dcb18a41-3ffc-4e3f-94a2-23bfcb46fc2e_buwoec.jpg';
+const heroVideo = 'https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4';
 
 interface HeroSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
@@ -16,12 +16,15 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
     <section 
       className="hero-section bg-white relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
-      <img
-        src={heroImage}
-        alt="Hero background"
+      {/* Background Video */}
+      <video
+        src={heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        data-testid="hero-image"
+        data-testid="hero-video"
       />
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40" />

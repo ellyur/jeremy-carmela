@@ -77,10 +77,7 @@ const Index = () => {
         <Navigation />
 
         <main className="relative z-10 space-y-0">
-          <CoverSection
-          videoUrl="https://res.cloudinary.com/dbwntiwss/video/upload/v1765810796/1_ovhsly.mp4"
-          alt="Jeremy & Carmela Wedding Video 1"
-        />
+          <HeroSection audioRef={audioRef} />
         <InvitationRevealSection />
         <CountdownSection />
         <StorySection />
@@ -91,7 +88,10 @@ const Index = () => {
         <ScrollTriggeredTimeline />
         <SaveTheDateSection audioRef={audioRef} />
         <VenueSection />
-        <HeroSection audioRef={audioRef} />
+        <CoverSection
+          imageUrl="https://res.cloudinary.com/dbrsm7rkk/image/upload/v1764433675/dcb18a41-3ffc-4e3f-94a2-23bfcb46fc2e_buwoec.jpg"
+          alt="Jeremy & Carmela Wedding Cover - Hero Image"
+        />
         <CoverSection
           imageUrl={cover2Image}
           alt="Jeremy & Carmela Wedding Cover 2"
